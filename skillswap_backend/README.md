@@ -4,10 +4,11 @@ This is the backend API for the SkillSwap community platform.
 
 ## Features
 
-- Authentication API with login endpoint
+- Authentication API with login endpoint and JWT support
 - Secure password handling with bcrypt
 - In-memory user storage (for development)
-- Ready for extension (database, registration, JWT)
+- JWT-based protected routes
+- Ready for extension (database, registration)
 
 ## Getting Started
 
