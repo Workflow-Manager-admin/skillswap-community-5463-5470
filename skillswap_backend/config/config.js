@@ -6,9 +6,9 @@ module.exports = {
   port: process.env.PORT || 5000,
   nodeEnv: process.env.NODE_ENV || 'development',
   
-  // This is a placeholder for JWT configuration which will be implemented later
+  // JWT configuration with secret from environment variable
   jwt: {
-    secret: process.env.JWT_SECRET || 'temporarysecret',
+    secret: process.env.JWT_SECRET,
     expiresIn: '24h'
   }
 };
