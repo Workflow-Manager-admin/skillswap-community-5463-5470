@@ -15,6 +15,7 @@ import ProfilePage from './pages/ProfilePage';
 import CommunityPage from './pages/CommunityPage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
 
 function App() {
   return (
