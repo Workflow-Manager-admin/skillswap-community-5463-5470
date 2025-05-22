@@ -48,12 +48,18 @@ export const AppProvider = ({ children }) => {
         };
       }
       
+      // Store token in localStorage
+      if (data.token) {
+        localStorage.setItem('skillswap_token', data.token);
+      }
+      
       // Login successful, update user state
       setCurrentUser(data.user);
       return {
         success: true,
         message: 'Login successful',
-        user: data.user
+        user: data.user,
+        token: data.token
       };
     } catch (error) {
       console.error('Login error:', error);
@@ -73,8 +79,10 @@ export const AppProvider = ({ children }) => {
     return userData; // Return the created user
   };
   
-  // Mock logout function
+  // Logout function
   const logout = () => {
+    // Remove token from local storage
+    localStorage.removeItem('skillswap_token');
     setCurrentUser(null);
   };
   
