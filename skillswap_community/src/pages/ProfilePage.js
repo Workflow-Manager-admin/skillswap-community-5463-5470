@@ -41,7 +41,7 @@ const getMockUserById = (id) => {
       name: 'Maya Johnson',
       avatar: 'https://via.placeholder.com/160?text=Maya',
       title: 'UX Designer & Yoga Instructor',
-      bio: 'I'm a UX designer with 6 years of experience who also teaches yoga on weekends. I love sharing my knowledge of design thinking and mindfulness practices. When I'm not designing or teaching, you'll find me hiking with my dog or experimenting with new vegan recipes.',
+      bio: "I'm a UX designer with 6 years of experience who also teaches yoga on weekends. I love sharing my knowledge of design thinking and mindfulness practices. When I'm not designing or teaching, you'll find me hiking with my dog or experimenting with new vegan recipes.",
       location: 'Seattle, WA',
       memberSince: 'January 2022',
       website: 'https://mayajodesign.com',

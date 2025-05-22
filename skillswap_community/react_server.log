@@ -444,3 +444,144 @@ src/pages/ProfilePage.js
   Line 44:14:  Parsing error: Unexpected token, expected "," (44:14)
 
 webpack compiled with 3 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+Syntax error: Unexpected token, expected "," (46:18) (46:18)
+
+src/pages/ProfilePage.js
+Syntax error: Unexpected token, expected "," (86:14) (86:14)
+ERROR in ./src/pages/CommunityPage.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/src/pages/CommunityPage.js: Unexpected token, expected "," (46:18)
+
+  44 |         avatar: 'https://via.placeholder.com/48?text=Sofia'
+  45 |       },
+> 46 |       content: 'I'm hosting a virtual Spanish conversation hour next Friday at 6pm EST. Perfect for intermediate learners who want to practice! Drop a comment if you're interested.',
+     |                   ^
+  47 |       timestamp: '2023-05-14T09:15:00',
+  48 |       likes: 15,
+  49 |       comments: [
+    at constructor (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowParserMixin.unexpected (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:3347:16)
+    at FlowParserMixin.expect (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:3657:12)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11506:14)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseExprListItem (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11858:18)
+    at FlowParserMixin.parseExprList (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11833:22)
+    at FlowParserMixin.parseArrayLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11740:26)
+    at FlowParserMixin.parseArrayLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5455:24)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11015:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12095:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseVar (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:13028:91)
+    at FlowParserMixin.parseVarStatement (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12874:10)
+    at FlowParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12489:23)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12406:17)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5140:24)
+    at FlowParserMixin.parseStatementListItem (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12386:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12960:61)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseBlock (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12941:10)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11783:24)
+    at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5114:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5290:16)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5114:12)
+    at FlowParserMixin.parseArrowExpression (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11758:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11371:12)
+
+ERROR in ./src/pages/ProfilePage.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/src/pages/ProfilePage.js: Unexpected token, expected "," (86:14)
+
+  84 |       avatar: 'https://via.placeholder.com/160?text=David',
+  85 |       title: 'Full-stack Developer & Music Teacher',
+> 86 |       bio: 'I've been coding for over a decade and playing piano for twice as long. I enjoy teaching both technical and creative skills - from React to Rachmaninoff. I believe in making complex topics accessible and enjoyable for everyone.',
+     |               ^
+  87 |       location: 'Chicago, IL',
+  88 |       memberSince: 'March 2022',
+  89 |       website: 'https://davidchendev.com',
+    at constructor (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowParserMixin.unexpected (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:3347:16)
+    at FlowParserMixin.expect (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:3657:12)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11506:14)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseObjectProperty (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11636:83)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11661:100)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5563:26)
+    at FlowParserMixin.parsePropertyDefinition (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11601:17)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11516:21)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12095:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseVar (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:13028:91)
+    at FlowParserMixin.parseVarStatement (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12874:10)
+    at FlowParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12489:23)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12406:17)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5140:24)
+    at FlowParserMixin.parseStatementListItem (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12386:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12960:61)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseBlock (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:12941:10)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11783:24)
+    at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5114:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5290:16)
+    at FlowParserMixin.parseFunctionBody (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:5114:12)
+    at FlowParserMixin.parseArrowExpression (/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/@babel/parser/lib/index.js:11758:10)
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 46:18:  Parsing error: Unexpected token, expected "," (46:18)
+
+src/pages/ProfilePage.js
+  Line 86:14:  Parsing error: Unexpected token, expected "," (86:14)
+
+webpack compiled with 3 errors
