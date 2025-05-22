@@ -25,6 +25,7 @@ function App() {
           {/* Auth routes outside MainContainer */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<SignUpPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           
           {/* Main routes with shared layout */}
           <Route path="/" element={<MainContainer />}>
