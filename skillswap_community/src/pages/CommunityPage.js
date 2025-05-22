@@ -83,7 +83,7 @@ const CommunityPage = () => {
         name: 'David Chen',
         avatar: 'https://via.placeholder.com/48?text=David'
       },
-      content: 'Just uploaded new JavaScript tutorial materials for my upcoming workshop. If you're registered, check your email for access!',
+      content: "Just uploaded new JavaScript tutorial materials for my upcoming workshop. If you're registered, check your email for access!",
       timestamp: '2023-05-13T16:45:00',
       attachments: [
         {
