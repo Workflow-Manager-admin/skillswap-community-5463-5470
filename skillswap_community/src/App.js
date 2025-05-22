@@ -13,6 +13,7 @@ import HomePage from './pages/HomePage';
 import SkillsExplorer from './pages/SkillsExplorer';
 import ProfilePage from './pages/ProfilePage';
 import CommunityPage from './pages/CommunityPage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
