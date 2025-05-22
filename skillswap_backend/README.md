@@ -109,7 +109,6 @@ skillswap_backend/
 ## Future Extensions
 
 - Database integration (MongoDB/PostgreSQL)
-- JWT token-based authentication
 - User registration endpoint
 - Password reset functionality
 - Profile management
