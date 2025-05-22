@@ -141,8 +141,8 @@ const SignUpPage = () => {
           avatar: 'https://via.placeholder.com/150?text=User'
         };
         
-        // Log the user in (using the existing login function from context)
-        login(mockUser);
+        // Register the user
+        register(mockUser);
         
         // Redirect to home page
         navigate('/');
