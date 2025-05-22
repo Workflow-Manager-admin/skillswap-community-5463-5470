@@ -28,6 +28,7 @@ This is the backend API for the SkillSwap community platform.
    ```
    PORT=5000
    NODE_ENV=development
+   JWT_SECRET=your_secure_jwt_secret_key
    ```
 
 3. Start the development server:
