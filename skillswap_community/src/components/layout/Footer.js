@@ -8,45 +8,175 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer style={{ 
-      backgroundColor: 'var(--kavia-dark)', 
+      backgroundColor: 'var(--bg-elevated)', 
       borderTop: '1px solid var(--border-color)',
-      padding: '2rem 0',
+      padding: 'var(--spacing-xl) 0',
       marginTop: 'auto'
     }}>
       <div className="container">
-        <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
-          <div style={{ marginBottom: '1.5rem', minWidth: '200px' }}>
-            <div className="logo">
-              <span className="logo-symbol">*</span> SkillSwap
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          flexWrap: 'wrap', 
+          gap: 'var(--spacing-xl)' 
+        }}>
+          <div style={{ 
+            marginBottom: 'var(--spacing-lg)', 
+            minWidth: '200px',
+            flex: '1 1 300px' 
+          }}>
+            <div className="logo" style={{ marginBottom: 'var(--spacing-md)' }}>
+              <span className="logo-symbol">⬢</span> SkillSwap
             </div>
-            <p style={{ color: 'var(--text-secondary)', maxWidth: '300px', margin: '1rem 0' }}>
+            <p style={{ 
+              color: 'var(--text-secondary)', 
+              maxWidth: '400px', 
+              margin: 'var(--spacing-md) 0',
+              fontSize: 'var(--font-size-md)',
+              lineHeight: '1.6'
+            }}>
               A peer-to-peer skill exchange platform where users can teach and learn skills from each other.
             </p>
+            
+            <div style={{ 
+              display: 'flex', 
+              gap: 'var(--spacing-md)', 
+              marginTop: 'var(--spacing-lg)' 
+            }}>
+              {/* Social media links - placeholder icons */}
+              {['Twitter', 'Facebook', 'Instagram', 'LinkedIn'].map((social) => (
+                <a 
+                  key={social} 
+                  href={`#${social.toLowerCase()}`}
+                  style={{
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: 'var(--radius-circle)',
+                    backgroundColor: 'var(--bg-dark)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'var(--text-secondary)',
+                    textDecoration: 'none',
+                    fontSize: 'var(--font-size-sm)',
+                    transition: 'all var(--transition-fast)'
+                  }}
+                >
+                  {social[0]}
+                </a>
+              ))}
+            </div>
           </div>
           
-          <div style={{ marginBottom: '1.5rem', minWidth: '150px' }}>
-            <h4 style={{ marginBottom: '1rem' }}>Navigation</h4>
-            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Home</Link></li>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/skills" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Skills</Link></li>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/community" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Community</Link></li>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/profile" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Profile</Link></li>
+          <div style={{ 
+            marginBottom: 'var(--spacing-lg)', 
+            minWidth: '150px',
+            flex: '1 1 150px' 
+          }}>
+            <h4 style={{ 
+              marginBottom: 'var(--spacing-md)',
+              fontSize: 'var(--font-size-lg)',
+              fontWeight: '600',
+              color: 'var(--text-primary)'
+            }}>
+              Navigation
+            </h4>
+            <ul style={{ 
+              listStyleType: 'none', 
+              padding: 0, 
+              margin: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 'var(--spacing-sm)'
+            }}>
+              {[
+                { to: '/', label: 'Home' },
+                { to: '/skills', label: 'Skills' },
+                { to: '/community', label: 'Community' },
+                { to: '/profile', label: 'Profile' }
+              ].map((link, index) => (
+                <li key={index}>
+                  <Link 
+                    to={link.to} 
+                    style={{ 
+                      color: 'var(--text-secondary)', 
+                      textDecoration: 'none',
+                      fontSize: 'var(--font-size-md)',
+                      transition: 'color var(--transition-fast)',
+                      display: 'inline-block',
+                      padding: 'var(--spacing-xs) 0'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = 'var(--primary-light)'}
+                    onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           
-          <div style={{ marginBottom: '1.5rem', minWidth: '150px' }}>
-            <h4 style={{ marginBottom: '1rem' }}>Resources</h4>
-            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/faq" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>FAQ</Link></li>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/terms" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Terms of Service</Link></li>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/privacy" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Privacy Policy</Link></li>
-              <li style={{ margin: '0.5rem 0' }}><Link to="/contact" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Contact Us</Link></li>
+          <div style={{ 
+            marginBottom: 'var(--spacing-lg)', 
+            minWidth: '150px',
+            flex: '1 1 150px'
+          }}>
+            <h4 style={{ 
+              marginBottom: 'var(--spacing-md)',
+              fontSize: 'var(--font-size-lg)',
+              fontWeight: '600',
+              color: 'var(--text-primary)'
+            }}>
+              Resources
+            </h4>
+            <ul style={{ 
+              listStyleType: 'none', 
+              padding: 0, 
+              margin: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 'var(--spacing-sm)'
+            }}>
+              {[
+                { to: '/faq', label: 'FAQ' },
+                { to: '/terms', label: 'Terms of Service' },
+                { to: '/privacy', label: 'Privacy Policy' },
+                { to: '/contact', label: 'Contact Us' }
+              ].map((link, index) => (
+                <li key={index}>
+                  <Link 
+                    to={link.to} 
+                    style={{ 
+                      color: 'var(--text-secondary)', 
+                      textDecoration: 'none',
+                      fontSize: 'var(--font-size-md)',
+                      transition: 'color var(--transition-fast)',
+                      display: 'inline-block',
+                      padding: 'var(--spacing-xs) 0'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = 'var(--primary-light)'}
+                    onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
         
-        <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem', marginTop: '1.5rem', textAlign: 'center' }}>
-          <p style={{ color: 'var(--text-secondary)' }}>© {new Date().getFullYear()} SkillSwap Community. All rights reserved.</p>
+        <div style={{ 
+          borderTop: '1px solid var(--border-color)', 
+          paddingTop: 'var(--spacing-lg)', 
+          marginTop: 'var(--spacing-lg)', 
+          textAlign: 'center' 
+        }}>
+          <p style={{ 
+            color: 'var(--text-tertiary)',
+            fontSize: 'var(--font-size-sm)'
+          }}>
+            © {new Date().getFullYear()} SkillSwap Community. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
