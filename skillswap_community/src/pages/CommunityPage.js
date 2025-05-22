@@ -31,7 +31,7 @@ const CommunityPage = () => {
             name: 'David Chen',
             avatar: 'https://via.placeholder.com/32?text=David'
           },
-          content: 'That's awesome! I'd love to join your next workshop.',
+          content: "That's awesome! I'd love to join your next workshop.",
           timestamp: '2023-05-15T15:45:00'
         }
       ]
