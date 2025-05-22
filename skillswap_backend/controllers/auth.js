@@ -1,9 +1,11 @@
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const config = require('../config/config');
 const { users } = require('../models/user');
 
 /**
  * PUBLIC_INTERFACE
- * @desc    Login a user
+ * @desc    Login a user and return a JWT token
  * @param   {Object} req - Express request object with username/email and password
  * @param   {Object} res - Express response object
  * @returns {Object} Response with token or error
@@ -42,15 +44,30 @@ exports.login = async (req, res) => {
       });
     }
 
-    // For now, just return user data (without password)
-    // TODO: Implement JWT token generation
+    // Remove password from user object
     const { password: _, ...userWithoutPassword } = user;
+    
+    // Generate JWT token
+    const payload = {
+      user: {
+        id: user.id,
+        username: user.username,
+        email: user.email,
+        role: user.role
+      }
+    };
+
+    const token = jwt.sign(
+      payload,
+      config.jwt.secret,
+      { expiresIn: config.jwt.expiresIn }
+    );
     
     return res.json({
       success: true,
       message: 'Login successful',
-      user: userWithoutPassword,
-      // token will be added when JWT is implemented
+      token,
+      user: userWithoutPassword
     });
     
   } catch (error) {
