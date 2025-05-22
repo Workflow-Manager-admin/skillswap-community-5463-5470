@@ -42,7 +42,7 @@ The API will be available at http://localhost:5000
 
 **Login**
 - URL: `POST /api/auth/login`
-- Description: Authenticate a user
+- Description: Authenticate a user and get JWT token
 - Request Body:
   ```json
   {
@@ -55,6 +55,7 @@ The API will be available at http://localhost:5000
   {
     "success": true,
     "message": "Login successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
     "user": {
       "id": "1",
       "username": "johndoe",
@@ -70,6 +71,16 @@ The API will be available at http://localhost:5000
   {
     "success": false,
     "message": "Invalid credentials"
+  }
+  ```
+
+**Authentication for Protected Routes**
+- All protected routes require a valid JWT token
+- Include token in request header: `x-auth-token`
+- Example:
+  ```
+  headers: {
+    'x-auth-token': 'your-jwt-token-here'
   }
   ```
 
