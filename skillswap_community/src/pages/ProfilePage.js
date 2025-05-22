@@ -125,7 +125,7 @@ const getMockUserById = (id) => {
       name: 'Sofia Garcia',
       avatar: 'https://via.placeholder.com/160?text=Sofia',
       title: 'Language Coach & Photographer',
-      bio: 'Born and raised in Madrid, now living in NYC. I teach Spanish with a focus on conversational fluency and cultural context. I'm also a freelance photographer specializing in street and travel photography. I love connecting with people from different backgrounds and sharing perspectives.',
+      bio: "Born and raised in Madrid, now living in NYC. I teach Spanish with a focus on conversational fluency and cultural context. I'm also a freelance photographer specializing in street and travel photography. I love connecting with people from different backgrounds and sharing perspectives.",
       location: 'New York, NY',
       memberSince: 'October 2021',
       website: 'https://sofiaspeaks.com',
