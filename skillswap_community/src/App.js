@@ -14,12 +14,18 @@ import SkillsExplorer from './pages/SkillsExplorer';
 import ProfilePage from './pages/ProfilePage';
 import CommunityPage from './pages/CommunityPage';
 import LoginPage from './pages/LoginPage';
+import SignUpPage from './pages/SignUpPage';
 
 function App() {
   return (
     <AppProvider>
       <BrowserRouter>
         <Routes>
+          {/* Auth routes outside MainContainer */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<SignUpPage />} />
+          
+          {/* Main routes with shared layout */}
           <Route path="/" element={<MainContainer />}>
             <Route index element={<HomePage />} />
             <Route path="skills" element={<SkillsExplorer />} />
@@ -40,4 +46,4 @@ function App() {
   );
 }
 
-Move on to fixing or adding other auth-related workflows (like 'Forgot Password' or 'Sign Up')?export default App;
+export default App;

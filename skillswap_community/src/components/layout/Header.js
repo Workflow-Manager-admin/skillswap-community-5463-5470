@@ -56,8 +56,9 @@ const Header = () => {
                 <button className="btn btn-accent" onClick={logout}>Logout</button>
               </div>
             ) : (
-              <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
                 <Link to="/login" className="btn">Login</Link>
+                <Link to="/register" className="btn btn-outline">Sign Up</Link>
               </div>
             )}
           </div>
