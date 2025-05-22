@@ -53,7 +53,7 @@ const CommunityPage = () => {
             name: 'Maya Johnson',
             avatar: 'https://via.placeholder.com/32?text=Maya'
           },
-          content: 'I'm in! Been wanting to practice my Spanish.',
+          content: "I'm in! Been wanting to practice my Spanish.",
           timestamp: '2023-05-14T10:22:00'
         },
         {
@@ -71,7 +71,7 @@ const CommunityPage = () => {
             name: 'Sofia Garcia',
             avatar: 'https://via.placeholder.com/32?text=Sofia'
           },
-          content: '@David Absolutely! Everyone is welcome. I'll make sure to include activities for all levels.',
+          content: "@David Absolutely! Everyone is welcome. I'll make sure to include activities for all levels.",
           timestamp: '2023-05-14T12:30:00'
         }
       ]
