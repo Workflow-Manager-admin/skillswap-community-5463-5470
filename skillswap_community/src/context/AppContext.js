@@ -38,6 +38,17 @@ export const AppProvider = ({ children }) => {
     setCurrentUser(null);
   };
   
+  // Mock password reset request function
+  const resetPassword = (email) => {
+    // In a real app, this would send a password reset link to the user's email
+    // For now, we'll just return a promise that resolves after a delay
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ success: true });
+      }, 1000);
+    });
+  };
+  
   // Function to add a new skill
   const addSkill = (skill) => {
     setSkills([...skills, skill]);
@@ -60,6 +71,7 @@ export const AppProvider = ({ children }) => {
     login,
     register,
     logout,
+    resetPassword,
     
     // Skills
     skills,
