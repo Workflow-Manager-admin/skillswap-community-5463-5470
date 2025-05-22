@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAppContext } from '../../context/AppContext';
 
 // PUBLIC_INTERFACE
@@ -8,28 +8,52 @@ import { useAppContext } from '../../context/AppContext';
  */
 const Header = () => {
   const { currentUser, logout } = useAppContext();
+  const location = useLocation();
+  
+  // Check if the current path matches the link path
+  const isActive = (path) => location.pathname === path;
   
   return (
     <header className="navbar">
       <div className="container">
         <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
-          <div className="logo">
-            <span className="logo-symbol">*</span> SkillSwap
-          </div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className="logo">
+              <span className="logo-symbol">⬢</span> SkillSwap
+            </div>
+          </Link>
           
-          <nav style={{ display: 'flex', gap: '1.5rem' }}>
-            <Link to="/" style={{ color: 'var(--text-color)', textDecoration: 'none' }}>Home</Link>
-            <Link to="/skills" style={{ color: 'var(--text-color)', textDecoration: 'none' }}>Skills</Link>
-            <Link to="/community" style={{ color: 'var(--text-color)', textDecoration: 'none' }}>Community</Link>
+          <nav style={{ display: 'flex', gap: 'var(--spacing-md)' }}>
+            <Link 
+              to="/" 
+              className={`nav-link ${isActive('/') ? 'active' : ''}`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/skills" 
+              className={`nav-link ${isActive('/skills') || location.pathname.includes('/skills/') ? 'active' : ''}`}
+            >
+              Skills
+            </Link>
+            <Link 
+              to="/community" 
+              className={`nav-link ${isActive('/community') || location.pathname.includes('/community/') ? 'active' : ''}`}
+            >
+              Community
+            </Link>
           </nav>
           
           <div>
             {currentUser ? (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <Link to="/profile" style={{ color: 'var(--text-color)', textDecoration: 'none' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-md)' }}>
+                <Link 
+                  to="/profile" 
+                  className={`nav-link ${isActive('/profile') || location.pathname.includes('/profile/') ? 'active' : ''}`}
+                >
                   Profile
                 </Link>
-                <button className="btn" onClick={logout}>Logout</button>
+                <button className="btn btn-accent" onClick={logout}>Logout</button>
               </div>
             ) : (
               <div>
