@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SkillCard from '../skills/SkillCard';
+import GitHubRepositoryList from '../github/GitHubRepositoryList';
+import { useAppContext } from '../../context/AppContext';
 
 // PUBLIC_INTERFACE
 /**

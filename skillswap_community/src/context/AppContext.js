@@ -126,6 +126,12 @@ export const AppProvider = ({ children }) => {
     setFeaturedSkills,
     addSkill,
     
+    // GitHub Repositories
+    skillRepositories,
+    repositoriesLoading,
+    repositoriesError,
+    fetchRepositoriesForSkill,
+    
     // Community
     communityEvents,
     setCommunityEvents,
