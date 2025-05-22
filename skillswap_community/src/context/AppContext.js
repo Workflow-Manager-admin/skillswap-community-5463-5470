@@ -70,6 +70,46 @@ export const AppProvider = ({ children }) => {
     setCommunityFeed([post, ...communityFeed]);
   };
   
+  // Function to fetch GitHub repositories for a skill
+  const fetchRepositoriesForSkill = async (skillName, limit = 3) => {
+    if (!skillName) return;
+    
+    // Mark this skill's repositories as loading
+    setRepositoriesLoading(prev => ({
+      ...prev,
+      [skillName]: true
+    }));
+    
+    try {
+      const results = await searchRepositories(skillName, limit);
+      
+      if (results.error) {
+        setRepositoriesError(prev => ({
+          ...prev,
+          [skillName]: results
+        }));
+      } else {
+        setSkillRepositories(prev => ({
+          ...prev,
+          [skillName]: results
+        }));
+      }
+    } catch (error) {
+      setRepositoriesError(prev => ({
+        ...prev,
+        [skillName]: {
+          error: true,
+          message: error.message
+        }
+      }));
+    } finally {
+      setRepositoriesLoading(prev => ({
+        ...prev,
+        [skillName]: false
+      }));
+    }
+  };
+  
   // Create the context value object
   const contextValue = {
     // User
