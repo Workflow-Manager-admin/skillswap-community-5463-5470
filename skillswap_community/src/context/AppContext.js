@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext } from 'react';
+import { searchRepositories } from '../services/GitHubService';
 
 // Create a context for our app
 const AppContext = createContext();
