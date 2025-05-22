@@ -26,9 +26,43 @@ export const AppProvider = ({ children }) => {
   const [communityEvents, setCommunityEvents] = useState([]);
   const [communityFeed, setCommunityFeed] = useState([]);
   
-  // Mock login function (in a real app, this would connect to authentication service)
-  const login = (userData) => {
-    setCurrentUser(userData);
+  // Login function that connects to the backend API
+  const login = async (username, password) => {
+    try {
+      const response = await fetch('http://localhost:5000/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+      
+      if (!response.ok) {
+        // Return the error response to be handled by the component
+        return {
+          success: false,
+          message: data.message || 'Login failed',
+          status: response.status
+        };
+      }
+      
+      // Login successful, update user state
+      setCurrentUser(data.user);
+      return {
+        success: true,
+        message: 'Login successful',
+        user: data.user
+      };
+    } catch (error) {
+      console.error('Login error:', error);
+      return {
+        success: false,
+        message: 'Network error. Please try again later.',
+        status: 0
+      };
+    }
   };
   
   // Mock register function
