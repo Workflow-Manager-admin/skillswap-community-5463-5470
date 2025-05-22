@@ -83,7 +83,7 @@ const getMockUserById = (id) => {
       name: 'David Chen',
       avatar: 'https://via.placeholder.com/160?text=David',
       title: 'Full-stack Developer & Music Teacher',
-      bio: 'I've been coding for over a decade and playing piano for twice as long. I enjoy teaching both technical and creative skills - from React to Rachmaninoff. I believe in making complex topics accessible and enjoyable for everyone.',
+      bio: "I've been coding for over a decade and playing piano for twice as long. I enjoy teaching both technical and creative skills - from React to Rachmaninoff. I believe in making complex topics accessible and enjoyable for everyone.",
       location: 'Chicago, IL',
       memberSince: 'March 2022',
       website: 'https://davidchendev.com',

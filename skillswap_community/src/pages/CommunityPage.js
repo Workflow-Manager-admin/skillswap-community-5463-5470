@@ -43,7 +43,7 @@ const CommunityPage = () => {
         name: 'Sofia Garcia',
         avatar: 'https://via.placeholder.com/48?text=Sofia'
       },
-      content: 'I'm hosting a virtual Spanish conversation hour next Friday at 6pm EST. Perfect for intermediate learners who want to practice! Drop a comment if you're interested.',
+      content: "I'm hosting a virtual Spanish conversation hour next Friday at 6pm EST. Perfect for intermediate learners who want to practice! Drop a comment if you're interested.",
       timestamp: '2023-05-14T09:15:00',
       likes: 15,
       comments: [
