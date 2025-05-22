@@ -201,7 +201,12 @@ const ProfileDetails = ({ user }) => {
             marginTop: '1rem'
           }}>
             {learningSkills.map((skill) => (
-              <SkillCard key={skill.id} skill={skill} />
+              <div key={skill.id} style={{ marginBottom: '2rem' }}>
+                <SkillCard skill={skill} />
+                <div style={{ marginTop: '1rem' }}>
+                  <GitHubRepositoryList skillName={skill.title} />
+                </div>
+              </div>
             ))}
           </div>
         </div>
