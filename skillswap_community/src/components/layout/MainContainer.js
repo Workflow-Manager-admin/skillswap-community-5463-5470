@@ -33,8 +33,8 @@ const MainContainer = () => {
         {/* Main content with padding */}
         <main style={{ 
           flex: 1, 
-          padding: '2rem',
-          backgroundColor: 'var(--kavia-dark)'
+          padding: 'var(--spacing-xl)',
+          backgroundColor: 'var(--bg-dark)'
         }}>
           <div className="container">
             {/* Router outlet for page content */}
