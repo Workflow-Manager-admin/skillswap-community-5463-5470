@@ -10,6 +10,26 @@ import { useAppContext } from '../../context/AppContext';
  * @param {Object} user - The user object containing profile information
  */
 const ProfileDetails = ({ user }) => {
+  // Get the GitHub repository fetching function from context
+  const { fetchRepositoriesForSkill } = useAppContext();
+  
+  // Fetch GitHub repositories for each skill
+  useEffect(() => {
+    if (user) {
+      const teachingSkills = user.teachingSkills || [];
+      const learningSkills = user.learningSkills || [];
+      
+      // Get unique skill titles from both teaching and learning skills
+      const allSkills = [...teachingSkills, ...learningSkills];
+      const uniqueSkillTitles = [...new Set(allSkills.map(skill => skill.title))];
+      
+      // Fetch repositories for each unique skill
+      uniqueSkillTitles.forEach(skillTitle => {
+        fetchRepositoriesForSkill(skillTitle);
+      });
+    }
+  }, [user, fetchRepositoriesForSkill]);
+  
   if (!user) return null;
   
   const {
@@ -24,20 +44,6 @@ const ProfileDetails = ({ user }) => {
     teachingSkills = [],
     learningSkills = []
   } = user;
-  
-  const { fetchRepositoriesForSkill } = useAppContext();
-  
-  // Fetch GitHub repositories for each skill
-  useEffect(() => {
-    // Get unique skill titles from both teaching and learning skills
-    const allSkills = [...teachingSkills, ...learningSkills];
-    const uniqueSkillTitles = [...new Set(allSkills.map(skill => skill.title))];
-    
-    // Fetch repositories for each unique skill
-    uniqueSkillTitles.forEach(skillTitle => {
-      fetchRepositoriesForSkill(skillTitle);
-    });
-  }, [teachingSkills, learningSkills, fetchRepositoriesForSkill]);
   
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
