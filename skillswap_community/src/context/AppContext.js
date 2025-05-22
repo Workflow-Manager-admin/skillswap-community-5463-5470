@@ -17,6 +17,11 @@ export const AppProvider = ({ children }) => {
   const [skills, setSkills] = useState([]);
   const [featuredSkills, setFeaturedSkills] = useState([]);
   
+  // GitHub repositories state
+  const [skillRepositories, setSkillRepositories] = useState({});
+  const [repositoriesLoading, setRepositoriesLoading] = useState({});
+  const [repositoriesError, setRepositoriesError] = useState({});
+  
   // Community state
   const [communityEvents, setCommunityEvents] = useState([]);
   const [communityFeed, setCommunityFeed] = useState([]);
