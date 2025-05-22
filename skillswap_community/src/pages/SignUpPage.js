@@ -27,7 +27,7 @@ const SignUpPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [passwordStrength, setPasswordStrength] = useState(0);
   
-  const { login, currentUser } = useAppContext();
+  const { register, currentUser } = useAppContext();
   const navigate = useNavigate();
   
   // If user is already logged in, redirect to home
