@@ -25,6 +25,14 @@ export const AppProvider = ({ children }) => {
     setCurrentUser(userData);
   };
   
+  // Mock register function
+  const register = (userData) => {
+    // In a real app, this would create a new user in the database
+    // For now, we'll just log the user in
+    setCurrentUser(userData);
+    return userData; // Return the created user
+  };
+  
   // Mock logout function
   const logout = () => {
     setCurrentUser(null);
@@ -50,6 +58,7 @@ export const AppProvider = ({ children }) => {
     // User
     currentUser,
     login,
+    register,
     logout,
     
     // Skills
