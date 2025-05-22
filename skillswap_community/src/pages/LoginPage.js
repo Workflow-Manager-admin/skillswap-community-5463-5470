@@ -44,37 +44,29 @@ const LoginPage = () => {
   }, []);
   
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     setIsLoading(true);
     
-    // Validate form
+    // Client-side validation - both fields are required
     if (!email.trim()) {
-      setError('Email is required');
+      setError('Email or username is required');
       setIsLoading(false);
       return;
     }
     
-    if (!password) {
+    if (!password.trim()) {
       setError('Password is required');
       setIsLoading(false);
       return;
     }
     
-    // Mock authentication
-    setTimeout(() => {
-      // For demo purposes, simulate a successful login with any valid input
-      // In a real app, this would verify credentials with a backend service
-      if (email && password) {
-        // Create a mock user object
-        const mockUser = {
-          id: 'user123',
-          name: 'Demo User',
-          email: email,
-          avatar: 'https://via.placeholder.com/150?text=User'
-        };
-        
+    try {
+      // Call login function from context with username/email and password
+      const result = await login(email, password);
+      
+      if (result.success) {
         // If "Remember Me" is checked, save to localStorage
         if (rememberMe) {
           localStorage.setItem('skillswap_user_email', email);
@@ -82,16 +74,24 @@ const LoginPage = () => {
           localStorage.removeItem('skillswap_user_email');
         }
         
-        // Call login function from context
-        login(mockUser);
-        
-        // Redirect to home page
+        // Redirect to home page on successful login
         navigate('/');
       } else {
-        setError('Invalid email or password');
+        // Display appropriate error message based on the status code
+        if (result.status === 401) {
+          setError('Invalid username/email or password');
+        } else if (result.status === 400) {
+          setError('Both username/email and password are required');
+        } else {
+          setError(result.message || 'Login failed. Please try again.');
+        }
       }
+    } catch (error) {
+      console.error('Login error:', error);
+      setError('An unexpected error occurred. Please try again.');
+    } finally {
       setIsLoading(false);
-    }, 1000);
+    }
   };
   
   // Check for saved email on component mount
