@@ -25,6 +25,20 @@ const ProfileDetails = ({ user }) => {
     learningSkills = []
   } = user;
   
+  const { fetchRepositoriesForSkill } = useAppContext();
+  
+  // Fetch GitHub repositories for each skill
+  useEffect(() => {
+    // Get unique skill titles from both teaching and learning skills
+    const allSkills = [...teachingSkills, ...learningSkills];
+    const uniqueSkillTitles = [...new Set(allSkills.map(skill => skill.title))];
+    
+    // Fetch repositories for each unique skill
+    uniqueSkillTitles.forEach(skillTitle => {
+      fetchRepositoriesForSkill(skillTitle);
+    });
+  }, [teachingSkills, learningSkills, fetchRepositoriesForSkill]);
+  
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       {/* Header with cover photo */}
@@ -165,7 +179,12 @@ const ProfileDetails = ({ user }) => {
             marginTop: '1rem'
           }}>
             {teachingSkills.map((skill) => (
-              <SkillCard key={skill.id} skill={skill} />
+              <div key={skill.id} style={{ marginBottom: '2rem' }}>
+                <SkillCard skill={skill} />
+                <div style={{ marginTop: '1rem' }}>
+                  <GitHubRepositoryList skillName={skill.title} />
+                </div>
+              </div>
             ))}
           </div>
         </div>
