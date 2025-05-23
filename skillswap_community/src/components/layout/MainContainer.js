@@ -36,8 +36,9 @@ const MainContainer = () => {
         minHeight: 'calc(100vh - 70px)', // Account for header height
         marginTop: '70px', // Space for fixed header
         position: 'relative',
+        flexDirection: 'row',
       }}>
-        {/* Sidebar for navigation */}
+        {/* Sidebar for navigation with improved positioning */}
         {showSidebar && (
           <div 
             style={{
@@ -45,23 +46,30 @@ const MainContainer = () => {
               top: '70px',
               height: 'calc(100vh - 70px)',
               overflowY: 'auto',
+              transition: 'all var(--transition-normal)',
+              flexShrink: 0,
+              zIndex: 10,
             }}
           >
             <Sidebar />
           </div>
         )}
 
-        {/* Main content with padding */}
+        {/* Main content with consistent padding */}
         <main style={{
           flex: 1,
-          padding: 'var(--spacing-lg)',
+          padding: 'var(--spacing-xl) var(--spacing-lg)',
           backgroundColor: 'var(--bg-dark)',
           minHeight: 'calc(100vh - 70px)',
           overflowX: 'hidden',
+          transition: 'padding var(--transition-normal)',
         }}>
           <div className="container" style={{
             maxWidth: showSidebar ? '900px' : '1200px',
             transition: 'max-width var(--transition-normal)',
+            margin: '0 auto',
+            width: '100%',
+            paddingBottom: 'var(--spacing-xxl)', // Add space for footer
           }}>
             {/* Page content rendered via Outlet */}
             <Outlet />
@@ -69,7 +77,7 @@ const MainContainer = () => {
         </main>
       </div>
 
-      {/* Footer */}
+      {/* Footer with fixed positioning */}
       <Footer />
     </div>
   );
