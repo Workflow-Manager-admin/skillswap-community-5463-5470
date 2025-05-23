@@ -45,7 +45,9 @@ const Header = () => {
             </Link>
           </nav>
           
-          <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-md)' }}>
+            <ThemeToggle />
+            
             {currentUser ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-md)' }}>
                 <Link 
