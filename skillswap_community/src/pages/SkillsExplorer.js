@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../context/AppContext';
+import { useLocation, useParams } from 'react-router-dom';
 import SkillsList from '../components/skills/SkillsList';
 
 // PUBLIC_INTERFACE
@@ -10,6 +11,21 @@ const SkillsExplorer = () => {
   const { skills } = useAppContext();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const location = useLocation();
+  const { categoryId } = useParams();
+  
+  // Set initial category and view type based on route
+  useEffect(() => {
+    if (categoryId) {
+      setSelectedCategory(categoryId.replace(/-/g, ' '));
+    } else if (location.pathname.includes('/skills/popular')) {
+      // Handle popular skills view
+      setSelectedCategory('all');
+    } else if (location.pathname.includes('/skills/new')) {
+      // Handle new skills view
+      setSelectedCategory('all');
+    }
+  }, [location, categoryId]);
   
   const categories = [
     'all',
