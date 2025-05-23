@@ -19,13 +19,18 @@ export const ThemeProvider = ({ children }) => {
 
   // Effect to update the document data-theme attribute when theme changes
   useEffect(() => {
+    // First remove any theme-related classes
+    document.body.classList.remove('dark-theme', 'light-theme');
+    
+    // Set the appropriate theme attribute and class
     document.documentElement.setAttribute('data-theme', theme);
-    // Also add/remove dark-theme class on body for broader compatibility
-    if (theme === 'dark') {
-      document.body.classList.add('dark-theme');
-    } else {
-      document.body.classList.remove('dark-theme');
-    }
+    document.body.classList.add(`${theme}-theme`);
+    
+    // Force a repaint to ensure all styles are applied correctly
+    document.documentElement.style.display = 'none';
+    document.documentElement.offsetHeight;
+    document.documentElement.style.display = '';
+    
     // Save theme to localStorage
     localStorage.setItem('skillswap_theme', theme);
   }, [theme]);
