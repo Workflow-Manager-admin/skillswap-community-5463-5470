@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAppContext } from '../../context/AppContext';
+import ThemeToggle from './ThemeToggle';
 
 // PUBLIC_INTERFACE
 /**
