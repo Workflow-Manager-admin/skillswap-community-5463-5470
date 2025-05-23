@@ -1,5 +1,6 @@
+/* Theme definitions */
 :root {
-  /* New theme color palette */
+  /* Shared color palette */
   --primary-color: #3E51B5;
   --primary-light: #5D71D4;
   --primary-dark: #2A3988;
@@ -10,7 +11,16 @@
   --accent-light: #FF7D53;
   --accent-dark: #C41C00;
   
-  /* Dark mode background colors */
+  /* Feedback colors */
+  --success: #4CAF50;
+  --warning: #FFCA28;
+  --error: #F44336;
+  --info: #2196F3;
+}
+
+/* Dark theme (default) */
+:root, [data-theme="dark"] {
+  /* Background colors */
   --bg-dark: #121212;
   --bg-card: #1E1E1E;
   --bg-elevated: #252525;
@@ -25,6 +35,31 @@
   --hover-overlay: rgba(255, 255, 255, 0.05);
   --active-overlay: rgba(62, 81, 181, 0.15);
   --disabled-text: rgba(255, 255, 255, 0.38);
+  
+  /* Icon colors */
+  --icon-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  /* Background colors */
+  --bg-dark: #F5F7FA;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #FFFFFF;
+  
+  /* Text colors */
+  --text-primary: #212121;
+  --text-secondary: rgba(0, 0, 0, 0.8);
+  --text-tertiary: rgba(0, 0, 0, 0.6);
+  
+  /* Utility colors */
+  --border-color: rgba(0, 0, 0, 0.12);
+  --hover-overlay: rgba(0, 0, 0, 0.05);
+  --active-overlay: rgba(62, 81, 181, 0.08);
+  --disabled-text: rgba(0, 0, 0, 0.38);
+  
+  /* Icon colors */
+  --icon-color: rgba(0, 0, 0, 0.8);
   
   /* Feedback colors */
   --success: #4CAF50;
