@@ -7,15 +7,7 @@ import { Link } from 'react-router-dom';
  */
 const Footer = () => {
   return (
-    <footer style={{ 
-      backgroundColor: 'var(--bg-elevated)', 
-      borderTop: '1px solid var(--border-color)',
-      padding: 'var(--spacing-xl) 0',
-      marginTop: 'auto',
-      width: '100%',
-      position: 'relative',
-      zIndex: 5
-    }}>
+    <footer className="site-footer">
       <div className="container">
         <div style={{ 
           display: 'flex', 
