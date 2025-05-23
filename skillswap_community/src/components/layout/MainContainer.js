@@ -13,18 +13,30 @@ import './Layout.css';
  */
 const MainContainer = () => {
   const [showSidebar, setShowSidebar] = React.useState(window.innerWidth > 768);
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 768);
 
   // Handle window resize to toggle sidebar visibility based on screen size
   React.useEffect(() => {
     const handleResize = () => {
-      setShowSidebar(window.innerWidth > 768);
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      if (!mobile) {
+        setShowSidebar(true);
+      } else if (mobile && showSidebar) {
+        setShowSidebar(false);
+      }
     };
 
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [showSidebar]);
+  
+  // Toggle sidebar visibility (for mobile menu button)
+  const toggleSidebar = () => {
+    setShowSidebar(prev => !prev);
+  };
 
   return (
     <div className="app">
