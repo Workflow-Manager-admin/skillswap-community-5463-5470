@@ -40,8 +40,8 @@ const MainContainer = () => {
 
   return (
     <div className="app">
-      {/* Header component */}
-      <Header />
+      {/* Header component with sidebar toggle */}
+      <Header toggleSidebar={toggleSidebar} isMobile={isMobile} />
 
       {/* Main content area with sidebar and page content */}
       <div className="layout-container">
