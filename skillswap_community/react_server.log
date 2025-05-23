@@ -424,3 +424,12 @@ Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
 Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
 
 webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
+ERROR in ./node_modules/react-router-dom/dist/index.mjs
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
+
+webpack compiled with 1 error

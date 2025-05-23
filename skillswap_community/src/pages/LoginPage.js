@@ -222,7 +222,7 @@ const LoginPage = () => {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         /* Login Page Styles */
         .login-page {
           min-height: calc(100vh - 70px);
