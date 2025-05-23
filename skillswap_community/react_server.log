@@ -402,3 +402,25 @@ ERROR in Error: Child compilation failed:
 1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
 webpack compiled with 6 errors
 Compiling...
+Compiled successfully!
+webpack compiled successfully
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 8 hidden lines
+
+ERROR in ./node_modules/react-router-dom/dist/index.mjs
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
+
+webpack compiled with 1 error
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
+ERROR in ./node_modules/react-router-dom/dist/index.mjs
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/node_modules/react-router-dom/dist/index.mjs'
+
+webpack compiled with 1 error
