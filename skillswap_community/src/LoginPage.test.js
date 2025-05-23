@@ -92,7 +92,7 @@ describe('Login functionality tests', () => {
     
     // Check if fetch was called with correct data
     await waitFor(() => {
-      expect(fetch).toHaveBeenCalledWith('http://localhost:5000/api/auth/login', {
+      expect(fetch).toHaveBeenCalledWith('http://localhost:5001/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: 'johndoe', password: 'password123' })
