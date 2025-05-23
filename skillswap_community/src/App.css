@@ -95,12 +95,6 @@
   /* Icon colors */
   --icon-color: rgba(0, 0, 0, 0.8);
   
-  /* Feedback colors */
-  --success: #4CAF50;
-  --warning: #FFCA28;
-  --error: #F44336;
-  --info: #2196F3;
-  
   /* Spacing variables */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
