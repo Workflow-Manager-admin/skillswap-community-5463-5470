@@ -11,7 +11,10 @@ const Footer = () => {
       backgroundColor: 'var(--bg-elevated)', 
       borderTop: '1px solid var(--border-color)',
       padding: 'var(--spacing-xl) 0',
-      marginTop: 'auto'
+      marginTop: 'auto',
+      width: '100%',
+      position: 'relative',
+      zIndex: 5
     }}>
       <div className="container">
         <div style={{ 
