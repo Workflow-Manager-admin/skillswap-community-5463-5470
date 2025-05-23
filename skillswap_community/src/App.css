@@ -19,7 +19,7 @@
 }
 
 /* Dark theme (default) */
-:root, [data-theme="dark"] {
+:root, [data-theme="dark"], .dark-theme {
   /* Background colors */
   --bg-dark: #121212;
   --bg-card: #1E1E1E;
