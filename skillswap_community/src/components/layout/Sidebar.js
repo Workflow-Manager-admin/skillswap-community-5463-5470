@@ -24,9 +24,12 @@ const Sidebar = () => {
   return (
     <aside style={{ 
       width: '250px', 
-      padding: 'var(--spacing-lg)', 
+      padding: 'var(--spacing-xl) var(--spacing-lg)', 
       borderRight: '1px solid var(--border-color)',
-      backgroundColor: 'var(--bg-card)'
+      backgroundColor: 'var(--bg-card)',
+      height: '100%',
+      boxSizing: 'border-box',
+      transition: 'all var(--transition-normal)',
     }}>
       <div>
         <h3 style={{ 
