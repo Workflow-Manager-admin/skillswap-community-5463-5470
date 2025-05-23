@@ -22,9 +22,32 @@
   top: 70px;
   height: calc(100vh - 70px);
   overflow-y: auto;
-  transition: all var(--transition-normal);
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
   flex-shrink: 0;
   z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    box-shadow: var(--shadow-lg);
+    animation: slideIn 0.3s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
 
 .sidebar {
