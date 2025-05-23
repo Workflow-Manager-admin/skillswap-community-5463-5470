@@ -27,9 +27,12 @@ export const ThemeProvider = ({ children }) => {
     document.body.classList.add(`${theme}-theme`);
     
     // Force a repaint to ensure all styles are applied correctly
-    document.documentElement.style.display = 'none';
-    document.documentElement.offsetHeight;
-    document.documentElement.style.display = '';
+    const root = document.documentElement;
+    root.style.display = 'none';
+    // Trigger reflow
+    const reflow = root.offsetHeight;
+    // Restore display
+    root.style.display = '';
     
     // Save theme to localStorage
     localStorage.setItem('skillswap_theme', theme);
