@@ -7,7 +7,7 @@ import ThemeToggle from './ThemeToggle';
 /**
  * Header component with navigation and user actions
  */
-const Header = () => {
+const Header = ({ toggleSidebar, isMobile }) => {
   const { currentUser, logout } = useAppContext();
   const location = useLocation();
   
