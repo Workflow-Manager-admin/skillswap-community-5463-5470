@@ -1,48 +1,74 @@
 import React from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 
 // PUBLIC_INTERFACE
 /**
- * MainContainer component serves as the primary UI structure
- * for the SkillSwap Community app
+ * MainContainer component that serves as the primary layout container for the SkillSwap Community application.
+ * It includes the Header, Sidebar, content area (rendered via Outlet), and Footer.
+ * The layout is responsive and adapts to different screen sizes.
  */
 const MainContainer = () => {
-  const location = useLocation();
-  
-  // Determine if sidebar should be shown
-  // Don't show sidebar on homepage and certain pages
-  const showSidebar = !['/', '/login', '/register', '/faq', '/terms', '/privacy', '/contact'].includes(location.pathname);
-  
+  const [showSidebar, setShowSidebar] = React.useState(window.innerWidth > 768);
+
+  // Handle window resize to toggle sidebar visibility based on screen size
+  React.useEffect(() => {
+    const handleResize = () => {
+      setShowSidebar(window.innerWidth > 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="app">
-      {/* Header with navigation */}
+      {/* Header component */}
       <Header />
-      
-      {/* Main content area */}
+
+      {/* Main content area with sidebar and page content */}
       <div style={{ 
-        display: 'flex', 
-        minHeight: 'calc(100vh - 70px)',  // Adjust based on header height
-        marginTop: '70px'  // Offset for fixed header
+        display: 'flex',
+        minHeight: 'calc(100vh - 70px)', // Account for header height
+        marginTop: '70px', // Space for fixed header
+        position: 'relative',
       }}>
-        {/* Conditional sidebar */}
-        {showSidebar && <Sidebar />}
-        
+        {/* Sidebar for navigation */}
+        {showSidebar && (
+          <div 
+            style={{
+              position: 'sticky',
+              top: '70px',
+              height: 'calc(100vh - 70px)',
+              overflowY: 'auto',
+            }}
+          >
+            <Sidebar />
+          </div>
+        )}
+
         {/* Main content with padding */}
-        <main style={{ 
-          flex: 1, 
-          padding: 'var(--spacing-xl)',
-          backgroundColor: 'var(--bg-dark)'
+        <main style={{
+          flex: 1,
+          padding: 'var(--spacing-lg)',
+          backgroundColor: 'var(--bg-dark)',
+          minHeight: 'calc(100vh - 70px)',
+          overflowX: 'hidden',
         }}>
-          <div className="container">
-            {/* Router outlet for page content */}
+          <div className="container" style={{
+            maxWidth: showSidebar ? '900px' : '1200px',
+            transition: 'max-width var(--transition-normal)',
+          }}>
+            {/* Page content rendered via Outlet */}
             <Outlet />
           </div>
         </main>
       </div>
-      
+
       {/* Footer */}
       <Footer />
     </div>
