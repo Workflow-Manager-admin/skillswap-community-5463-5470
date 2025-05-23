@@ -22,15 +22,7 @@ const Sidebar = () => {
   const isActive = (path) => location.pathname.includes(path);
   
   return (
-    <aside style={{ 
-      width: '250px', 
-      padding: 'var(--spacing-xl) var(--spacing-lg)', 
-      borderRight: '1px solid var(--border-color)',
-      backgroundColor: 'var(--bg-card)',
-      height: '100%',
-      boxSizing: 'border-box',
-      transition: 'all var(--transition-normal)',
-    }}>
+    <aside className="sidebar">
       <div>
         <h3 style={{ 
           color: 'var(--text-primary)',
