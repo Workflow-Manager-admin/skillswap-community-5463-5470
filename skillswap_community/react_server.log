@@ -27,3 +27,190 @@ webpack compiled successfully
 Compiling...
 Compiled successfully!
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: Unexpected token = in JSON at position 210
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: Unexpected token = in JSON at position 210
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: Unexpected token = in JSON at position 210
+
+ERROR in main
+Module not found: SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: Unexpected token = in JSON at position 210
+
+ERROR in Module not found: SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_community/package.json (directory description file): SyntaxError: Unexpected token = in JSON at position 210
+
+ERROR in Error: Child compilation failed:
+  Module not found: SyntaxError: /home/kavia/workspace/code-generation/skillswap  -community-5463-5470/skillswap_community/package.json (directory description f  ile): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5  463-5470/skillswap_community/package.json (directory description file): Syntax  Error: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/package.json (directory description file): SyntaxError: /home  /kavia/workspace/code-generation/skillswap-community-5463-5470/skillswap_commu  nity/package.json (directory description file): SyntaxError: /home/kavia/works  pace/code-generation/skillswap-community-5463-5470/skillswap_community/package  .json (directory description file): SyntaxError: Unexpected token = in JSON at   position 210
+  ModuleNotFoundError: Module not found: SyntaxError: /home/kavia/workspace/code  -generation/skillswap-community-5463-5470/skillswap_community/package.json (di  rectory description file): SyntaxError: /home/kavia/workspace/code-generation/  skillswap-community-5463-5470/skillswap_community/package.json (directory desc  ription file): SyntaxError: /home/kavia/workspace/code-generation/skillswap-co  mmunity-5463-5470/skillswap_community/package.json (directory description file  ): SyntaxError: /home/kavia/workspace/code-generation/skillswap-community-5463  -5470/skillswap_community/package.json (directory description file): SyntaxErr  or: /home/kavia/workspace/code-generation/skillswap-community-5463-5470/skills  wap_community/package.json (directory description file): SyntaxError: Unexpect  ed token = in JSON at position 210
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/Compilation.js:2123:28
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/NormalModuleFactory.js:923:13
+      at eval (eval at create (/home/kavia/workspace/code-generation/skillswap-c  ommunity-5463-5470/skillswap_community/node_modules/tapable/lib/HookCodeFactor  y.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/NormalModuleFactory.js:339:22
+      at eval (eval at create (/home/kavia/workspace/code-generation/skillswap-c  ommunity-5463-5470/skillswap_community/node_modules/tapable/lib/HookCodeFactor  y.js:33:10), <anonymous>:9:1)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/NormalModuleFactory.js:520:22
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/NormalModuleFactory.js:155:10
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/NormalModuleFactory.js:745:23
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/neo-async/async.js:2830:7
+      at done (/home/kavia/workspace/code-generation/skillswap-community-5463-54  70/skillswap_community/node_modules/neo-async/async.js:2925:13)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/NormalModuleFactory.js:1192:23
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/Resolver.js:620:22
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/Resolver.js:716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/skillswap-c  ommunity-5463-5470/skillswap_community/node_modules/tapable/lib/HookCodeFactor  y.js:33:10), <anonymous>:24:1)
+      at done (/home/kavia/workspace/code-generation/skillswap-community-5463-54  70/skillswap_community/node_modules/webpack/lib/cache/ResolverCachePlugin.js:3  55:13)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/webpack/lib/cache/ResolverCachePlugin.js:195:22
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/Resolver.js:716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/skillswap-c  ommunity-5463-5470/skillswap_community/node_modules/tapable/lib/HookCodeFactor  y.js:33:10), <anonymous>:10:1)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/Resolver.js:716:21
+      at eval (eval at create (/home/kavia/workspace/code-generation/skillswap-c  ommunity-5463-5470/skillswap_community/node_modules/tapable/lib/HookCodeFactor  y.js:33:10), <anonymous>:24:1)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:58  :24
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js:146  :21
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/forEachBail.js:39:13
+      at onJson (/home/kavia/workspace/code-generation/skillswap-community-5463-  5470/skillswap_community/node_modules/enhanced-resolve/lib/DescriptionFileUtil  s.js:131:14)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js:81:  15
+      at runCallbacks (/home/kavia/workspace/code-generation/skillswap-community  -5463-5470/skillswap_community/node_modules/enhanced-resolve/lib/CachedInputFi  leSystem.js:52:4)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27  9:5
+      at Array.<anonymous> (/home/kavia/workspace/code-generation/skillswap-comm  unity-5463-5470/skillswap_community/node_modules/enhanced-resolve/lib/CachedIn  putFileSystem.js:596:17)
+      at runCallbacks (/home/kavia/workspace/code-generation/skillswap-community  -5463-5470/skillswap_community/node_modules/enhanced-resolve/lib/CachedInputFi  leSystem.js:45:15)
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27  9:5
+      at /home/kavia/workspace/code-generation/skillswap-community-5463-5470/ski  llswap_community/node_modules/graceful-fs/graceful-fs.js:123:16
+      at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read  _file_context:68:3)
+  
+  - Compilation.js:2123 
+    [skillswap_community]/[webpack]/lib/Compilation.js:2123:28
+  
+  - NormalModuleFactory.js:923 
+    [skillswap_community]/[webpack]/lib/NormalModuleFactory.js:923:13
+  
+  
+  - NormalModuleFactory.js:339 
+    [skillswap_community]/[webpack]/lib/NormalModuleFactory.js:339:22
+  
+  
+  - NormalModuleFactory.js:520 
+    [skillswap_community]/[webpack]/lib/NormalModuleFactory.js:520:22
+  
+  - NormalModuleFactory.js:155 
+    [skillswap_community]/[webpack]/lib/NormalModuleFactory.js:155:10
+  
+  - NormalModuleFactory.js:745 
+    [skillswap_community]/[webpack]/lib/NormalModuleFactory.js:745:23
+  
+  - async.js:2830 
+    [skillswap_community]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [skillswap_community]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1192 
+    [skillswap_community]/[webpack]/lib/NormalModuleFactory.js:1192:23
+  
+  - Resolver.js:620 
+    [skillswap_community]/[enhanced-resolve]/lib/Resolver.js:620:22
+  
+  - Resolver.js:716 
+    [skillswap_community]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - ResolverCachePlugin.js:355 done
+    [skillswap_community]/[webpack]/lib/cache/ResolverCachePlugin.js:355:13
+  
+  - ResolverCachePlugin.js:195 
+    [skillswap_community]/[webpack]/lib/cache/ResolverCachePlugin.js:195:22
+  
+  - Resolver.js:716 
+    [skillswap_community]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - Resolver.js:716 
+    [skillswap_community]/[enhanced-resolve]/lib/Resolver.js:716:21
+  
+  
+  - DescriptionFilePlugin.js:58 
+    [skillswap_community]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:58:24
+  
+  - DescriptionFileUtils.js:146 
+    [skillswap_community]/[enhanced-resolve]/lib/DescriptionFileUtils.js:146:21
+  
+  - forEachBail.js:39 
+    [skillswap_community]/[enhanced-resolve]/lib/forEachBail.js:39:13
+  
+  - DescriptionFileUtils.js:131 onJson
+    [skillswap_community]/[enhanced-resolve]/lib/DescriptionFileUtils.js:131:14
+  
+  - DescriptionFileUtils.js:81 
+    [skillswap_community]/[enhanced-resolve]/lib/DescriptionFileUtils.js:81:15
+  
+  - CachedInputFileSystem.js:52 runCallbacks
+    [skillswap_community]/[enhanced-resolve]/lib/CachedInputFileSystem.js:52:4
+  
+  - CachedInputFileSystem.js:279 
+    [skillswap_community]/[enhanced-resolve]/lib/CachedInputFileSystem.js:279:5
+  
+  - CachedInputFileSystem.js:596 Array.<anonymous>
+    [skillswap_community]/[enhanced-resolve]/lib/CachedInputFileSystem.js:596:17  
+  - CachedInputFileSystem.js:45 runCallbacks
+    [skillswap_community]/[enhanced-resolve]/lib/CachedInputFileSystem.js:45:15
+  
+  - CachedInputFileSystem.js:279 
+    [skillswap_community]/[enhanced-resolve]/lib/CachedInputFileSystem.js:279:5
+  
+  - graceful-fs.js:123 
+    [skillswap_community]/[graceful-fs]/graceful-fs.js:123:16
+  
+  - read_file_context:68 FSReqCallback.readFileAfterClose [as oncomplete]
+    node:internal/fs/read_file_context:68:3
+  
+  - child-compiler.js:211 
+    [skillswap_community]/[html-webpack-plugin]/lib/child-compiler.js:211:18
+  
+  - Compiler.js:629 finalCallback
+    [skillswap_community]/[webpack]/lib/Compiler.js:629:5
+  
+  - Compiler.js:664 
+    [skillswap_community]/[webpack]/lib/Compiler.js:664:11
+  
+  - Compiler.js:1350 
+    [skillswap_community]/[webpack]/lib/Compiler.js:1350:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [skillswap_community]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1346 
+    [skillswap_community]/[webpack]/lib/Compiler.js:1346:33
+  
+  - Compilation.js:2938 finalCallback
+    [skillswap_community]/[webpack]/lib/Compilation.js:2938:11
+  
+  - Compilation.js:3251 
+    [skillswap_community]/[webpack]/lib/Compilation.js:3251:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [skillswap_community]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3244 
+    [skillswap_community]/[webpack]/lib/Compilation.js:3244:38
+  
+  
+  - Compilation.js:540 
+    [skillswap_community]/[webpack]/lib/Compilation.js:540:10
+  
+  - SourceMapDevToolPlugin.js:607 
+    [skillswap_community]/[webpack]/lib/SourceMapDevToolPlugin.js:607:10
+  
+  - async.js:2830 
+    [skillswap_community]/[neo-async]/async.js:2830:7
+  
+  - async.js:2857 Object.each
+    [skillswap_community]/[neo-async]/async.js:2857:9
+  
+  - SourceMapDevToolPlugin.js:423 
+    [skillswap_community]/[webpack]/lib/SourceMapDevToolPlugin.js:423:17
+  
+  - async.js:2830 
+    [skillswap_community]/[neo-async]/async.js:2830:7
+
+1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack compiled with 6 errors
