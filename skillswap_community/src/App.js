@@ -21,8 +21,9 @@ import ForgotPasswordPage from './pages/ForgotPasswordPage';
 function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
-        <Routes>
+      <ThemeProvider>
+        <BrowserRouter>
+          <Routes>
           {/* Auth routes outside MainContainer */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<SignUpPage />} />
