@@ -32,9 +32,12 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="skills" element={<SkillsExplorer />} />
             <Route path="skills/category/:categoryId" element={<SkillsExplorer />} />
+            <Route path="skills/popular" element={<SkillsExplorer />} />
+            <Route path="skills/new" element={<SkillsExplorer />} />
             <Route path="profile" element={<ProfilePage />} />
             <Route path="profile/:userId" element={<ProfilePage />} />
             <Route path="community" element={<CommunityPage />} />
+            <Route path="community/events" element={<CommunityPage />} />
             <Route path="*" element={
               <div style={{ textAlign: 'center', padding: '3rem' }}>
                 <h1>404 - Page Not Found</h1>
