@@ -29,8 +29,8 @@ export const ThemeProvider = ({ children }) => {
     // Force a repaint to ensure all styles are applied correctly
     const root = document.documentElement;
     root.style.display = 'none';
-    // Trigger reflow
-    const reflow = root.offsetHeight;
+    // Trigger reflow (using void to avoid the eslint warning)
+    void root.offsetHeight;
     // Restore display
     root.style.display = '';
     
