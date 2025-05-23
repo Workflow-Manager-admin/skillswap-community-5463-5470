@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../context/AppContext';
+import { useLocation } from 'react-router-dom';
 import CommunityFeed from '../components/community/CommunityFeed';
 import EventsList from '../components/community/EventsList';
 import ProfileCard from '../components/profile/ProfileCard';
@@ -10,6 +11,16 @@ import ProfileCard from '../components/profile/ProfileCard';
  */
 const CommunityPage = () => {
   const [activeTab, setActiveTab] = useState('feed');
+  const location = useLocation();
+  
+  // Set active tab based on route
+  useEffect(() => {
+    if (location.pathname.includes('/community/events')) {
+      setActiveTab('events');
+    } else {
+      setActiveTab('feed');
+    }
+  }, [location]);
   const { communityFeed, communityEvents } = useAppContext();
   
   // Mock community feed data
